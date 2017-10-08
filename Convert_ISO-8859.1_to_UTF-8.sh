@@ -1,5 +1,5 @@
-
+# Al descargar los archivos del inegi vienen en otra codificaciòn así que hay que convertirlos a codificaciòn UTF-8 por ejemplo:
 # Para ver el tipo de archivos que tenemos
 file -i *
+# Este comando es para convertirlos
 iconv -f iso-8859-1 -t utf-8 patharchivoviejo > pathmyarchivonuevo
-# Ejemplo iconv -f iso-8859-1 -t utf-8 Faltante__H00_hasta_H95_INEGI_Exporta_20171007172107.csv.bk > Faltante__H00_hasta_H95_INEGI_Exporta_20171007172107.csv.bk.utf8
